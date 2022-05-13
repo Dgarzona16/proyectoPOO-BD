@@ -1,6 +1,6 @@
 ﻿namespace proyecto_POO_BD
 {
-    partial class Principal
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.kryptonDockableNavigator1 = new ComponentFactory.Krypton.Docking.KryptonDockableNavigator();
             this.paletteBINAES = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblContrasena = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtContraseña = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnIngresar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.pnlLogin = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator1)).BeginInit();
             this.kryptonDockableNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -109,10 +110,12 @@
             this.txtUsuario.StateNormal.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtUsuario.StateNormal.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.txtUsuario.StateNormal.Border.Width = 0;
-            this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TabIndex = 2;
             this.txtUsuario.Tag = "";
             this.txtUsuario.Text = "Introduzca su Usuario";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // lblContrasena
             // 
@@ -125,33 +128,35 @@
             this.lblContrasena.TabIndex = 2;
             this.lblContrasena.Text = "Contraseña";
             // 
-            // kryptonTextBox1
+            // txtContraseña
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(25, 210);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.PasswordChar = '*';
-            this.kryptonTextBox1.Size = new System.Drawing.Size(292, 31);
-            this.kryptonTextBox1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.kryptonTextBox1.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.kryptonTextBox1.StateActive.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonTextBox1.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonTextBox1.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonTextBox1.StateNormal.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonTextBox1.StateNormal.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonTextBox1.StateNormal.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.kryptonTextBox1.StateNormal.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateNormal.Border.Width = 0;
-            this.kryptonTextBox1.TabIndex = 3;
-            this.kryptonTextBox1.Tag = "";
-            this.kryptonTextBox1.Text = "Introduzca su contraseña";
-            this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtContraseña.Location = new System.Drawing.Point(25, 210);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(292, 31);
+            this.txtContraseña.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.txtContraseña.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.txtContraseña.StateActive.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.txtContraseña.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.txtContraseña.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtContraseña.StateCommon.Content.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtContraseña.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.StateNormal.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.txtContraseña.StateNormal.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.txtContraseña.StateNormal.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.txtContraseña.StateNormal.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txtContraseña.StateNormal.Border.Width = 0;
+            this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.Tag = "";
+            this.txtContraseña.Text = "Introduzca su Contraseña";
+            this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // btnIngresar
             // 
@@ -219,7 +224,14 @@
             this.picLogo.TabIndex = 5;
             this.picLogo.TabStop = false;
             // 
-            // Principal
+            // pnlLogin
+            // 
+            this.pnlLogin.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(841, 468);
+            this.pnlLogin.TabIndex = 1;
+            // 
+            // Login
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -228,22 +240,22 @@
             this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnIngresar);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.pnlLogin);
             this.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Principal";
+            this.Name = "Login";
             this.Palette = this.paletteBINAES;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BINAES";
-            this.Load += new System.EventHandler(this.Principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator1)).EndInit();
             this.kryptonDockableNavigator1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -258,9 +270,10 @@
         private System.Windows.Forms.Label lblUsuario;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtUsuario;
         private System.Windows.Forms.Label lblContrasena;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtContraseña;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnIngresar;
         private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Panel pnlLogin;
     }
 }
 
