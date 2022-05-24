@@ -13,9 +13,9 @@ using proyecto_POO_BD.Properties;
 
 namespace proyecto_POO_BD
 {
-    public partial class Login : KryptonForm
+    public partial class frmLogin : KryptonForm
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -27,12 +27,26 @@ namespace proyecto_POO_BD
             CheckAdmin checkAdmin = new CheckAdmin();
             if (checkAdmin.Login(txtUsuario.Text, txtContraseña.Text))
             {
-                MessageBox.Show("Bienvenido " + txtUsuario.Text, "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                principal.FormClosed += LogOut;
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblError.Text = "Usuario o contraseña incorrectos";
+                txtContraseña.Clear();
+                txtUsuario.Focus();
             }
+        }
+
+        private void LogOut(object sender, EventArgs e)
+        {
+            txtContraseña.Clear();
+            txtUsuario.Clear();
+            lblError.Text = "";
+            this.Show();
+            txtUsuario.Focus();
         }
         //
         //PLACEHOLDER
