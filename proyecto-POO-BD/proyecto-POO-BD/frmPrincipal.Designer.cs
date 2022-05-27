@@ -122,13 +122,14 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.button23 = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.tmrEvento = new System.Windows.Forms.Timer(this.components);
             this.tmrColeccion = new System.Windows.Forms.Timer(this.components);
             this.tmrMaterial = new System.Windows.Forms.Timer(this.components);
             this.tmrReserva = new System.Windows.Forms.Timer(this.components);
             this.tmrUser = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLogOut = new System.Windows.Forms.Button();
+            this.pnlDinamico = new System.Windows.Forms.Panel();
             this.pnlHeader.SuspendLayout();
             this.sideBar.SuspendLayout();
             this.pnlEventoContainer.SuspendLayout();
@@ -339,6 +340,7 @@
             this.btnBuscarEventos.TabIndex = 3;
             this.btnBuscarEventos.Text = "Buscar";
             this.btnBuscarEventos.UseVisualStyleBackColor = true;
+            this.btnBuscarEventos.Click += new System.EventHandler(this.btnBuscarEventos_Click);
             // 
             // panel10
             // 
@@ -386,6 +388,7 @@
             this.btnAñadirEvento.TabIndex = 3;
             this.btnAñadirEvento.Text = "Añadir";
             this.btnAñadirEvento.UseVisualStyleBackColor = true;
+            this.btnAñadirEvento.Click += new System.EventHandler(this.btnAñadirEvento_Click);
             // 
             // pnlEEvento
             // 
@@ -433,6 +436,7 @@
             this.btnEliminarEvento.TabIndex = 3;
             this.btnEliminarEvento.Text = "Eliminar";
             this.btnEliminarEvento.UseVisualStyleBackColor = true;
+            this.btnEliminarEvento.Click += new System.EventHandler(this.btnEliminarEvento_Click);
             // 
             // pnlEvento
             // 
@@ -541,6 +545,7 @@
             this.btnBuscarColeccion.TabIndex = 3;
             this.btnBuscarColeccion.Text = "Buscar";
             this.btnBuscarColeccion.UseVisualStyleBackColor = true;
+            this.btnBuscarColeccion.Click += new System.EventHandler(this.btnBuscarColeccion_Click);
             // 
             // panel4
             // 
@@ -588,6 +593,7 @@
             this.btnAñadirColeccion.TabIndex = 3;
             this.btnAñadirColeccion.Text = "Añadir";
             this.btnAñadirColeccion.UseVisualStyleBackColor = true;
+            this.btnAñadirColeccion.Click += new System.EventHandler(this.btnAñadirColeccion_Click);
             // 
             // panel8
             // 
@@ -635,6 +641,7 @@
             this.btnEliminarColeccion.TabIndex = 3;
             this.btnEliminarColeccion.Text = "Eliminar";
             this.btnEliminarColeccion.UseVisualStyleBackColor = true;
+            this.btnEliminarColeccion.Click += new System.EventHandler(this.btnEliminarColeccion_Click);
             // 
             // panel14
             // 
@@ -743,6 +750,7 @@
             this.btnBuscarMaterial.TabIndex = 3;
             this.btnBuscarMaterial.Text = "Buscar";
             this.btnBuscarMaterial.UseVisualStyleBackColor = true;
+            this.btnBuscarMaterial.Click += new System.EventHandler(this.btnBuscarMaterial_Click);
             // 
             // panel18
             // 
@@ -790,6 +798,7 @@
             this.btnAñadirMaterial.TabIndex = 3;
             this.btnAñadirMaterial.Text = "Añadir";
             this.btnAñadirMaterial.UseVisualStyleBackColor = true;
+            this.btnAñadirMaterial.Click += new System.EventHandler(this.btnAñadirMaterial_Click);
             // 
             // panel20
             // 
@@ -837,6 +846,7 @@
             this.btnEliminarMaterial.TabIndex = 3;
             this.btnEliminarMaterial.Text = "Eliminar";
             this.btnEliminarMaterial.UseVisualStyleBackColor = true;
+            this.btnEliminarMaterial.Click += new System.EventHandler(this.btnEliminarMaterial_Click);
             // 
             // panel22
             // 
@@ -945,6 +955,7 @@
             this.btnBuscarReserva.TabIndex = 3;
             this.btnBuscarReserva.Text = "Buscar";
             this.btnBuscarReserva.UseVisualStyleBackColor = true;
+            this.btnBuscarReserva.Click += new System.EventHandler(this.btnBuscarReserva_Click);
             // 
             // panel26
             // 
@@ -992,6 +1003,7 @@
             this.btnAñadirReserva.TabIndex = 3;
             this.btnAñadirReserva.Text = "Añadir";
             this.btnAñadirReserva.UseVisualStyleBackColor = true;
+            this.btnAñadirReserva.Click += new System.EventHandler(this.btnAñadirReserva_Click);
             // 
             // panel28
             // 
@@ -1039,6 +1051,7 @@
             this.btnEliminarReserva.TabIndex = 3;
             this.btnEliminarReserva.Text = "Eliminar";
             this.btnEliminarReserva.UseVisualStyleBackColor = true;
+            this.btnEliminarReserva.Click += new System.EventHandler(this.btnEliminarReserva_Click);
             // 
             // panel30
             // 
@@ -1147,6 +1160,7 @@
             this.btnBuscarUsuario.TabIndex = 3;
             this.btnBuscarUsuario.Text = "Buscar";
             this.btnBuscarUsuario.UseVisualStyleBackColor = true;
+            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
             // 
             // panel34
             // 
@@ -1194,6 +1208,7 @@
             this.btnAñadirUsuario.TabIndex = 3;
             this.btnAñadirUsuario.Text = "Añadir";
             this.btnAñadirUsuario.UseVisualStyleBackColor = true;
+            this.btnAñadirUsuario.Click += new System.EventHandler(this.btnAñadirUsuario_Click);
             // 
             // panel36
             // 
@@ -1241,6 +1256,7 @@
             this.btnEliminarUsuario.TabIndex = 3;
             this.btnEliminarUsuario.Text = "Eliminar";
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // panel38
             // 
@@ -1290,6 +1306,30 @@
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Location = new System.Drawing.Point(3, 273);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(135, 48);
+            this.panel1.TabIndex = 2;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(-11, -6);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnLogOut.Size = new System.Drawing.Size(159, 63);
+            this.btnLogOut.TabIndex = 3;
+            this.btnLogOut.Text = "Cerrar sesion";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // tmrEvento
             // 
             this.tmrEvento.Interval = 10;
@@ -1315,29 +1355,13 @@
             this.tmrUser.Interval = 10;
             this.tmrUser.Tick += new System.EventHandler(this.tmrUser_Tick);
             // 
-            // panel1
+            // pnlDinamico
             // 
-            this.panel1.Controls.Add(this.btnLogOut);
-            this.panel1.Location = new System.Drawing.Point(3, 273);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(135, 48);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
-            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(-11, -6);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLogOut.Size = new System.Drawing.Size(159, 63);
-            this.btnLogOut.TabIndex = 3;
-            this.btnLogOut.Text = "Cerrar sesion";
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.pnlDinamico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDinamico.Location = new System.Drawing.Point(141, 39);
+            this.pnlDinamico.Name = "pnlDinamico";
+            this.pnlDinamico.Size = new System.Drawing.Size(843, 500);
+            this.pnlDinamico.TabIndex = 2;
             // 
             // frmPrincipal
             // 
@@ -1345,6 +1369,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(984, 539);
+            this.Controls.Add(this.pnlDinamico);
             this.Controls.Add(this.sideBar);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1508,5 +1533,6 @@
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Panel pnlDinamico;
     }
 }

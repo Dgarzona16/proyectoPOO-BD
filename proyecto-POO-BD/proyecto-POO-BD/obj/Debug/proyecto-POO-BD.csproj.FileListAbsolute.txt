@@ -21,3 +21,4 @@ C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\pr
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.frmLogin.resources
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.frmPrincipal.resources
+C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.subForms.frmBuscar.resources

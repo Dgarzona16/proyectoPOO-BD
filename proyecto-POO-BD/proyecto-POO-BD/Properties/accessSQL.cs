@@ -12,7 +12,7 @@ namespace proyecto_POO_BD.Properties
         private readonly string connection;
         public accessSQL()
         {
-            this.connection = "Data Source=DESKTOP-H6ADMFM;DataBase=BINAES;Integrated Security=True";
+            this.connection = "Data Source=25.67.193.151,1433;DataBase=BINAES;User ID=BINAESdb;Password=serverdb";
         }
 
         protected SqlConnection getConnection()

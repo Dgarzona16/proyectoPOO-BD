@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using proyecto_POO_BD.subForms;
+using proyecto_POO_BD.Properties;
 
 namespace proyecto_POO_BD
 {
@@ -23,16 +25,15 @@ namespace proyecto_POO_BD
         int movX;
         int movY;
 
+        EventComplement eventComplement = new EventComplement();
+        ColectionComplement colectionComplement = new ColectionComplement();
+        MaterialComplement materialComplement = new MaterialComplement();
+        ReserveComplement reserveComplement = new ReserveComplement();
+        UserComplement userComplement = new UserComplement();
+
         public frmPrincipal()
         {
             InitializeComponent();
-        }
-        //
-        //Salir
-        //
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
         //
         //Panel de Eventos
@@ -263,6 +264,13 @@ namespace proyecto_POO_BD
             this.WindowState = FormWindowState.Minimized;
         }
         //
+        //Salir
+        //
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //
         //Mover
         //
         private void pnlHeader_MouseDown(object sender, MouseEventArgs e)
@@ -288,6 +296,95 @@ namespace proyecto_POO_BD
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        //
+        //Panel Dinamico
+        //
+        public void loadForm(object Form)
+        {
+            if (this.pnlDinamico.Controls.Count > 0)
+                this.pnlDinamico.Controls.RemoveAt(0);
+            Form fh = Form as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.pnlDinamico.Controls.Add(fh);
+            this.pnlDinamico.Tag = fh;
+            fh.Show();
+        }
+        //
+        //Eventos
+        //
+        private void btnBuscarEventos_Click(object sender, EventArgs e)
+        {
+            loadForm(new frmBuscar(eventComplement));
+        }
+        private void btnAñadirEvento_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEliminarEvento_Click(object sender, EventArgs e)
+        {
+
+        }
+        //
+        //Colecciones
+        //
+        private void btnBuscarColeccion_Click(object sender, EventArgs e)
+        {
+            loadForm(new frmBuscar(colectionComplement));
+        }
+        private void btnAñadirColeccion_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEliminarColeccion_Click(object sender, EventArgs e)
+        {
+
+        }
+        //
+        //Material
+        //
+        private void btnBuscarMaterial_Click(object sender, EventArgs e)
+        {
+            loadForm(new frmBuscar(materialComplement));
+        }
+        private void btnAñadirMaterial_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEliminarMaterial_Click(object sender, EventArgs e)
+        {
+
+        }
+        //
+        //Reservas
+        //
+        private void btnBuscarReserva_Click(object sender, EventArgs e)
+        {
+            loadForm(new frmBuscar(reserveComplement));
+        }
+        private void btnAñadirReserva_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEliminarReserva_Click(object sender, EventArgs e)
+        {
+
+        }
+        //
+        //Usuarios
+        //
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+            loadForm(new frmBuscar(userComplement));
+        }
+        private void btnAñadirUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
