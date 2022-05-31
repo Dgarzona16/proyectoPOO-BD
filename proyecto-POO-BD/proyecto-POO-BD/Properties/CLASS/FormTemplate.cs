@@ -9,6 +9,7 @@ namespace proyecto_POO_BD.Properties
     public class FormTemplate
     {
         public List<string> CmbItems = new List<string>();
+        public SQLReaderWriter consulta;
         public FormTemplate()
         {
             
@@ -28,6 +29,7 @@ namespace proyecto_POO_BD.Properties
             CmbItems.Add("Fecha de inicio");
             CmbItems.Add("Fecha de fin");
             CmbItems.Add("Area");
+            consulta = new EventSQL();
             //
             //Añadir
             //

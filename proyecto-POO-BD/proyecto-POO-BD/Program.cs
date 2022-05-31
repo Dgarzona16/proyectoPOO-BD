@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using proyecto_POO_BD.Forms;
 
 namespace proyecto_POO_BD
 {

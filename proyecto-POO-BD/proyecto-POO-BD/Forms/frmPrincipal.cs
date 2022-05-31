@@ -8,10 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-using proyecto_POO_BD.subForms;
 using proyecto_POO_BD.Properties;
 
-namespace proyecto_POO_BD
+namespace proyecto_POO_BD.Forms
 {
     public partial class frmPrincipal : KryptonForm
     {

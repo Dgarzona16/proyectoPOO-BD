@@ -207,3 +207,16 @@ INSERT INTO AREA
 
 
 --
+			--EVENTOS--
+INSERT INTO EVENTO
+	VALUES ('Lectura Infantil by Alberto Bonilla','./Resouces/src_EVENT/lectura_infantil_by_alberto_bonilla.png',CONVERT(datetime,'23-07-22 4:00 PM',5),CONVERT(datetime,'23-07-22 5:00 PM',5),50,9);
+
+INSERT INTO EVENTO
+	VALUES ('Competencia de programacion','',CONVERT(datetime,'25-06-22 1:00 PM',5),CONVERT(datetime,'25-06-22 3:00 PM',5),65,21);
+
+INSERT INTO EVENTO
+	VALUES ('Conferencia de Becas Internacionales','',CONVERT(datetime,'26-07-22 9:00 AM',5),CONVERT(datetime,'26-07-22 11:00 AM',5),150,2);
+
+
+
+SELECT * FROM EVENTO;

@@ -69,38 +69,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BINAESDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Forms\frmBuscar.Designer.cs">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Forms\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Forms\Login.cs" />
+    <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\accessSQL.cs" />
-    <Compile Include="Properties\accessSQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\FormTemplate.cs" />
+    <Compile Include="Properties\CLASS\FormTemplate.cs" />
+    <Compile Include="Properties\DB_CONNECT\accessSQL.cs" />
+    <Compile Include="Properties\DB_CONNECT\CheckAdmin.cs" />
+    <Compile Include="Properties\DB_CONNECT\SQLReaderWriter.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="subForms\frmBuscar.cs">
+    <Compile Include="Forms\frmBuscar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="subForms\frmBuscar.Designer.cs">
-      <DependentUpon>frmBuscar.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,8 +110,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\CheckAdmin.cs" />
-    <EmbeddedResource Include="subForms\frmBuscar.resx">
+    <EmbeddedResource Include="Forms\frmBuscar.resx">
       <DependentUpon>frmBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BINAESDataSet.xsc">

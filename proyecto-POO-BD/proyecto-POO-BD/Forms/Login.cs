@@ -11,7 +11,7 @@ using ComponentFactory.Krypton.Toolkit;
 using System.Data.SqlClient;
 using proyecto_POO_BD.Properties;
 
-namespace proyecto_POO_BD
+namespace proyecto_POO_BD.Forms
 {
     public partial class frmLogin : KryptonForm
     {
