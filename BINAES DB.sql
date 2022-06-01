@@ -217,6 +217,19 @@ INSERT INTO EVENTO
 INSERT INTO EVENTO
 	VALUES ('Conferencia de Becas Internacionales','',CONVERT(datetime,'26-07-22 9:00 AM',5),CONVERT(datetime,'26-07-22 11:00 AM',5),150,2);
 
+--
+			--COLECCION--
+INSERT INTO COLECCION
+	VALUES ('Libros de ficcion','libros','Ciencia Ficcion',6);
+
+INSERT INTO COLECCION
+	VALUES ('Audios en ingles','Audios','Vocabulario',6);
+
+INSERT INTO COLECCION
+	VALUES ('Mangas de shounen','Mangas','Accion',6);
+
+--
 
 
-SELECT * FROM EVENTO;
+SELECT id, nombre
+FROM AREA;

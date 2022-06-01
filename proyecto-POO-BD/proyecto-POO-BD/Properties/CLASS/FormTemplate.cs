@@ -26,8 +26,6 @@ namespace proyecto_POO_BD.Properties
             //Buscar
             //
             CmbItems.Add("Nombre de Evento");
-            CmbItems.Add("Fecha de inicio");
-            CmbItems.Add("Fecha de fin");
             CmbItems.Add("Area");
             consulta = new EventSQL();
             //
@@ -44,9 +42,10 @@ namespace proyecto_POO_BD.Properties
             //
             //Buscar
             //
-            CmbItems.Add("Nombre de la coleccion");
+            CmbItems.Add("Nombre de coleccion");
             CmbItems.Add("Tipo de coleccion");
             CmbItems.Add("Genero");
+            consulta = new CollectionSQL();
             //
             //Añadir
             //
@@ -61,9 +60,10 @@ namespace proyecto_POO_BD.Properties
             //Buscar
             //
             CmbItems.Add("Nombre del material");
-            CmbItems.Add("Palabras Clave");
+            CmbItems.Add("Palabras clave");
             CmbItems.Add("Autor");
             CmbItems.Add("Formato");
+            consulta = new MaterialSQL();
             //  
             //Añadir
             //
@@ -77,9 +77,9 @@ namespace proyecto_POO_BD.Properties
             //
             //Buscar
             //
-            CmbItems.Add("Usuario");
-            CmbItems.Add("Fecha de prestamo");
-            CmbItems.Add("Fecha de reserva");
+            CmbItems.Add("Reserva / Usuario");
+            CmbItems.Add("Prestamo / Usuaraio");
+            consulta = new ReserveSQL();
             //
             //Añadir
             //
@@ -95,6 +95,7 @@ namespace proyecto_POO_BD.Properties
             //
             CmbItems.Add("Nombre");
             CmbItems.Add("Ocupacion");
+            consulta = new UserSQL();
             //
             //Añadir
             //

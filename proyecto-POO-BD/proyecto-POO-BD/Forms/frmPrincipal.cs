@@ -35,6 +35,27 @@ namespace proyecto_POO_BD.Forms
             InitializeComponent();
         }
         //
+        //Reset de color
+        //
+        private void ResetColor()
+        {
+            btnBuscarEventos.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirEvento.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarEvento.BackColor = Color.FromArgb(32, 83, 117);
+            btnBuscarColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnBuscarMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnBuscarReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnBuscarUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarUsuario.BackColor = Color.FromArgb(32, 83, 117);
+        }
+        //
         //Panel de Eventos
         //
         private void tmrEvento_Tick(object sender, EventArgs e)
@@ -61,6 +82,7 @@ namespace proyecto_POO_BD.Forms
         }
         private void btnEventos_Click(object sender, EventArgs e)
         {
+            ResetColor();
             if (!colectionPill)
             {
                 tmrColeccion.Start();
@@ -105,6 +127,7 @@ namespace proyecto_POO_BD.Forms
         }
         private void btnColecciones_Click(object sender, EventArgs e)
         {
+            ResetColor();
             if (!eventPill)
             {
                 tmrEvento.Start();
@@ -149,6 +172,7 @@ namespace proyecto_POO_BD.Forms
         }
         private void btnMaterial_Click(object sender, EventArgs e)
         {
+            ResetColor();
             if (!eventPill)
             {
                 tmrEvento.Start();
@@ -193,6 +217,7 @@ namespace proyecto_POO_BD.Forms
         }
         private void btnReserva_Click(object sender, EventArgs e)
         {
+            ResetColor();
             if (!eventPill)
             {
                 tmrEvento.Start();
@@ -237,6 +262,7 @@ namespace proyecto_POO_BD.Forms
         }
         private void btnUsuario_Click(object sender, EventArgs e)
         {
+            ResetColor();
             if (!eventPill)
             {
                 tmrEvento.Start();
@@ -316,14 +342,21 @@ namespace proyecto_POO_BD.Forms
         private void btnBuscarEventos_Click(object sender, EventArgs e)
         {
             loadForm(new frmBuscar(eventComplement));
+            btnBuscarEventos.BackColor = Color.FromArgb(25, 58, 79);
+            btnAñadirEvento.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarEvento.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnAñadirEvento_Click(object sender, EventArgs e)
         {
-
+            btnBuscarEventos.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirEvento.BackColor = Color.FromArgb(25, 58, 79);
+            btnEliminarEvento.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnEliminarEvento_Click(object sender, EventArgs e)
         {
-
+            btnBuscarEventos.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirEvento.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarEvento.BackColor = Color.FromArgb(25, 58, 79);
         }
         //
         //Colecciones

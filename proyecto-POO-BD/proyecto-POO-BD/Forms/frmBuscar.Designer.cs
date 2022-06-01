@@ -37,7 +37,7 @@
             // 
             // txtBuscador
             // 
-            this.txtBuscador.Location = new System.Drawing.Point(12, 12);
+            this.txtBuscador.Location = new System.Drawing.Point(12, 24);
             this.txtBuscador.Name = "txtBuscador";
             this.txtBuscador.Size = new System.Drawing.Size(563, 23);
             this.txtBuscador.TabIndex = 0;
@@ -46,17 +46,38 @@
             // cmbCatalogo
             // 
             this.cmbCatalogo.DropDownWidth = 167;
-            this.cmbCatalogo.Location = new System.Drawing.Point(597, 14);
+            this.cmbCatalogo.Location = new System.Drawing.Point(612, 26);
             this.cmbCatalogo.Name = "cmbCatalogo";
-            this.cmbCatalogo.Size = new System.Drawing.Size(167, 21);
+            this.cmbCatalogo.Size = new System.Drawing.Size(167, 23);
+            this.cmbCatalogo.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.cmbCatalogo.StateActive.ComboBox.Content.Color1 = System.Drawing.Color.White;
+            this.cmbCatalogo.StateActive.ComboBox.Content.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCatalogo.StateNormal.ComboBox.Content.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCatalogo.StateNormal.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.cmbCatalogo.StateNormal.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.cmbCatalogo.StateTracking.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.cmbCatalogo.StateTracking.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.cmbCatalogo.StateTracking.Item.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.cmbCatalogo.StateTracking.Item.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.cmbCatalogo.StateTracking.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cmbCatalogo.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.cmbCatalogo.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.cmbCatalogo.TabIndex = 1;
             // 
             // dtgvResultado
             // 
+            this.dtgvResultado.AllowUserToAddRows = false;
+            this.dtgvResultado.AllowUserToDeleteRows = false;
+            this.dtgvResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvResultado.Location = new System.Drawing.Point(23, 78);
+            this.dtgvResultado.Location = new System.Drawing.Point(12, 82);
             this.dtgvResultado.Name = "dtgvResultado";
-            this.dtgvResultado.Size = new System.Drawing.Size(777, 357);
+            this.dtgvResultado.ReadOnly = true;
+            this.dtgvResultado.Size = new System.Drawing.Size(801, 392);
+            this.dtgvResultado.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.dtgvResultado.StateNormal.HeaderRow.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtgvResultado.TabIndex = 2;
             // 
             // frmBuscar
@@ -71,6 +92,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBuscar";
             this.Text = "frmBuscar";
+            this.Load += new System.EventHandler(this.frmBuscar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmbCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultado)).EndInit();
             this.ResumeLayout(false);
