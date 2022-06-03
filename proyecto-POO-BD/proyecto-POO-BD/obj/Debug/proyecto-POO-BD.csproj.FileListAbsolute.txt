@@ -22,3 +22,4 @@ C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\pr
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.Forms.frmBuscar.resources
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.Forms.frmPrincipal.resources
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.Forms.frmLogin.resources
+C:\Users\DanielGarzona\OneDrive\Documents\#POO\proyectoPOO-BD\proyecto-POO-BD\proyecto-POO-BD\obj\Debug\proyecto_POO_BD.Forms.Forms_añadir.frmAñadirEvento.resources

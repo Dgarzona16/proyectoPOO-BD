@@ -46,9 +46,9 @@
             // cmbCatalogo
             // 
             this.cmbCatalogo.DropDownWidth = 167;
-            this.cmbCatalogo.Location = new System.Drawing.Point(612, 26);
+            this.cmbCatalogo.Location = new System.Drawing.Point(604, 24);
             this.cmbCatalogo.Name = "cmbCatalogo";
-            this.cmbCatalogo.Size = new System.Drawing.Size(167, 23);
+            this.cmbCatalogo.Size = new System.Drawing.Size(209, 23);
             this.cmbCatalogo.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.cmbCatalogo.StateActive.ComboBox.Content.Color1 = System.Drawing.Color.White;
             this.cmbCatalogo.StateActive.ComboBox.Content.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -364,14 +364,21 @@ namespace proyecto_POO_BD.Forms
         private void btnBuscarColeccion_Click(object sender, EventArgs e)
         {
             loadForm(new frmBuscar(colectionComplement));
+            btnBuscarColeccion.BackColor = Color.FromArgb(25, 58, 79);
+            btnAñadirColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarColeccion.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnAñadirColeccion_Click(object sender, EventArgs e)
         {
-
+            btnBuscarColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirColeccion.BackColor = Color.FromArgb(25, 58, 79);
+            btnEliminarColeccion.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnEliminarColeccion_Click(object sender, EventArgs e)
         {
-
+            btnBuscarColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirColeccion.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarColeccion.BackColor = Color.FromArgb(25, 58, 79);
         }
         //
         //Material
@@ -379,14 +386,21 @@ namespace proyecto_POO_BD.Forms
         private void btnBuscarMaterial_Click(object sender, EventArgs e)
         {
             loadForm(new frmBuscar(materialComplement));
+            btnBuscarMaterial.BackColor = Color.FromArgb(25, 58, 79);
+            btnAñadirMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarMaterial.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnAñadirMaterial_Click(object sender, EventArgs e)
         {
-
+            btnBuscarMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirMaterial.BackColor = Color.FromArgb(25, 58, 79);
+            btnEliminarMaterial.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnEliminarMaterial_Click(object sender, EventArgs e)
         {
-
+            btnBuscarMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirMaterial.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarMaterial.BackColor = Color.FromArgb(25, 58, 79);
         }
         //
         //Reservas
@@ -394,14 +408,21 @@ namespace proyecto_POO_BD.Forms
         private void btnBuscarReserva_Click(object sender, EventArgs e)
         {
             loadForm(new frmBuscar(reserveComplement));
+            btnBuscarReserva.BackColor = Color.FromArgb(25, 58, 79);
+            btnAñadirReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarReserva.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnAñadirReserva_Click(object sender, EventArgs e)
         {
-
+            btnBuscarReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirReserva.BackColor = Color.FromArgb(25, 58, 79);
+            btnEliminarReserva.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnEliminarReserva_Click(object sender, EventArgs e)
         {
-
+            btnBuscarReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirReserva.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarReserva.BackColor = Color.FromArgb(25, 58, 79);
         }
         //
         //Usuarios
@@ -409,14 +430,21 @@ namespace proyecto_POO_BD.Forms
         private void btnBuscarUsuario_Click(object sender, EventArgs e)
         {
             loadForm(new frmBuscar(userComplement));
+            btnBuscarUsuario.BackColor = Color.FromArgb(25, 58, 79);
+            btnAñadirUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarUsuario.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnAñadirUsuario_Click(object sender, EventArgs e)
         {
-
+            btnBuscarUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirUsuario.BackColor = Color.FromArgb(25, 58, 79);
+            btnEliminarUsuario.BackColor = Color.FromArgb(32, 83, 117);
         }
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
-
+            btnBuscarUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnAñadirUsuario.BackColor = Color.FromArgb(32, 83, 117);
+            btnEliminarUsuario.BackColor = Color.FromArgb(25, 58, 79);
         }
     }
 }

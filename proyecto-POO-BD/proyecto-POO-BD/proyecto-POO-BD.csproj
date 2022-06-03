@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Forms añadir\frmAñadirEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms añadir\frmAñadirEvento.Designer.cs">
+      <DependentUpon>frmAñadirEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmBuscar.Designer.cs">
       <DependentUpon>frmBuscar.cs</DependentUpon>
     </Compile>
@@ -77,6 +83,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login.cs" />
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
@@ -94,6 +106,12 @@
     <Compile Include="Forms\frmBuscar.cs">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\Forms añadir\frmAñadirEvento.resx">
+      <DependentUpon>frmAñadirEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBuscar.resx">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

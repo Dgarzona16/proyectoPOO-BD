@@ -115,19 +115,19 @@ namespace proyecto_POO_BD.Properties
 
                     if (colunm == "Nombre del material")
                     {
-                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN AREA ON MATERIAL.Id_Coleccion = COLECCION.Id WHERE MATERIAL.Nombre LIKE '{word}%'";
+                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN COLECCION ON MATERIAL.Id_Coleccion = COLECCION.Id WHERE MATERIAL.Nombre LIKE '{word}%'";
                     }
                     if (colunm == "Autor")
                     {
-                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN AREA ON MATERIAL.Id_Coleccion = COLECCION.Id WHERE MATERIAL.Autor LIKE '{word}%'";
+                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN COLECCION ON MATERIAL.Id_Coleccion = COLECCION.Id WHERE MATERIAL.Autor LIKE '{word}%'";
                     }
                     if (colunm == "Formato")
                     {
-                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN AREA ON MATERIAL.Id_Coleccion = COLECCION.Id INNER JOIN FORMATO ON MATERIAL.Id_Formato = FORMATO.Id WHERE FORMATO.Tipo LIKE '{word}%'";
+                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN COLECCION ON MATERIAL.Id_Coleccion = COLECCION.Id INNER JOIN FORMATO ON MATERIAL.Id_Formato = FORMATO.Id WHERE FORMATO.Tipo LIKE '{word}%'";
                     }
                     if(colunm == "Palabras clave")
                     {
-                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN AREA ON MATERIAL.Id_Coleccion = COLECCION.Id INNER JOIN PALABRAS ON PALABRAS.Id_Material = MATERIAL.Id WHERE PALABRAS.Palabra LIKE '{word}%'";
+                        command.CommandText = $"SELECT MATERIAL.Id, MATERIAL.Nombre, MATERIAL.Autor, MATERIAL.Idioma, MATERIAL.Editorial, COLECCION.Nombre AS 'Coleccion' FROM MATERIAL INNER JOIN COLECCION ON MATERIAL.Id_Coleccion = COLECCION.Id INNER JOIN PALABRAS ON PALABRAS.Id_Material = MATERIAL.Id WHERE PALABRAS.Palabra LIKE '{word}%'";
                     }
 
                     command.CommandType = CommandType.Text;
@@ -160,7 +160,7 @@ namespace proyecto_POO_BD.Properties
 
                     if (colunm == "Reserva / Usuario")
                     {
-                        command.CommandText = $"SELECT USUAIO.Nombre AS 'Usuario', RESERVA.FechaHora_Reserva AS 'Fecha de reserva', RESERVA.FechaHora_Prestamo AS 'Fecha Prestamo', RESERVA.FechaHora_Devolucion AS 'Fecha devolucion', MATERIAL.Nombre AS 'Objeto prestado'FROM RESERVA INNER JOIN USUARIO ON RESERVA.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON RESERVA.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
+                        command.CommandText = $"SELECT USUARIO.Nombre AS 'Usuario', RESERVA.FechaHora_Reserva AS 'Fecha_Reserva', RESERVA.FechaHora_Prestamo AS 'Fecha_Prestamo', RESERVA.FechaHora_Devolucion AS 'Fecha_Devolucion', MATERIAL.Nombre AS 'Objeto_Prestado'FROM RESERVA INNER JOIN USUARIO ON RESERVA.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON RESERVA.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
                     }
                     if (colunm == "Prestamo / Usuario")
                     {
